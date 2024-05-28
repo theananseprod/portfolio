@@ -1,178 +1,745 @@
-<p><b>M . E . S . DIVINE NURU . BROWN</b>
-<br/><br/><i>UX/PRODUCT DESIGNER</i>
-<br/><br/><i>ENGINEER BY TRADE</i>
+<html>
+  <head>
+        <!-- Win98, from themes.edada.ms -->
+        <title>{Title}{block:PostSummary}, {PostSummary}{/block:PostSummary}{block:TagPage}, #{Tag}{/block:TagPage}</title>
+        {block:Description}<meta name="description" value="{MetaDescription}" />{/block:Description}
+        <link rel="shortcut icon" href="{Favicon}" />
+        <link rel="alternate" href="{RSS}" />
+        <meta charset="utf-8" />
 
-<br/><br/>
+        <meta name="image:Background image" content="" />
+        <meta name="color:Background color" content="#008080" />
+        <meta name="color:Links" content="#000000" />
+        <meta name="color:Icon labels" content="#ffffff" />
+        <meta name="font:Font" content="Helvetica Neue" />
+        <meta name="if:Infinite scrolling" content="1" />
+        <meta name="if:Two columns" content="1" />
+        <meta name="if:Background image cover" content="0" />
+        <meta name="if:Tags on index" content="1" />
+        <meta name="if:Photo captions" content="1" />
+        <meta name="if:Description box" content="0" />
+        <meta name="if:Home icon" content="1" />
+        <!-- [ note: hide ask ] 
+        <meta name="if:Ask icon" content="1" /> -->
+        <!-- [ note: hide submit ] 
+        <meta name="if:Submit icon" content="1" /> -->
+        <meta name="if:Pages icon" content="1" />
+        <!-- [ note: hide archive ] 
+        <meta name="if:Archive icon" content="1" /> -->
 
-</p>
+        <link rel="stylesheet" href="//static.tumblr.com/fpdiq1j/N3Zmkjmqn/theme_generic.css" />
+        <style type="text/css">
+            body {
+                background: {color:Background color} url('{image:Background image}') repeat fixed;
+                {block:IfBackgroundImageCover}background-size: cover;{/block:IfBackgroundImageCover}
+                margin: 0;
+                font: normal 22px/1.1 {font:Font};
+            }
+        
+            a {
+                color: {color:Links};
+                text-decoration: none;
+            }
+        
+            a:hover {
+                text-decoration: underline;
+            }
+        
+            /* social media bar*/
+            .wrapper .icon{
+              position: relative;
+              /* background-color: #ffffff; */
+              border-radius: 50%;
+              margin: 10px;
+              width: 50px;
+              height: 50px;
+              line-height: 50px;
+              font-size: 22px;
+              display: inline-block;
+              vertical-align: center;
+              /* box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1); */
+              cursor: pointer;
+              transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+              /* color: #333 */
+              text-decoration: none;
+            }
+            /* fin : social media bar */
 
-<hr class="dotted">
+            .icons {
+                margin: 0 0 0 10px;
+                list-style-type: none;
+                padding: 0;
+                width: 100px;
+                float: left;
+                position: fixed;
+                z-index: 2;
+            }
+            
+            .center {
+                /*margin-left: auto;
+                margin-right: auto;*/
+                margin: auto;
+                padding: 25px 200px 25px 200px;
+            }
+        
+            .my_computer, .my_documents, .network_neighborhood, .folder, .recycle_bin, .start_menu, .application_icons, .start_bar .start_button .logo, .start_bar .tray .calendar, .start_menu, .window .top, .window .middle, .window .bottom, .description .top, .description .ok_button, .description .bottom {
+                background-image: url('//static.tumblr.com/fpdiq1j/O6Um4f3al/master_sprite.png');
+                margin: auto;
+            }
+        
+            .my_computer {
+                height: 32px;
+                width: 32px;
+                background-position: -616px -157px;
+            }
+        
+            .my_documents {
+                height: 30px;
+                width: 32px;
+                background-position: -616px -189px;
+            }
+        
+            .network_neighborhood {
+                height: 32px;
+                width: 32px;
+                background-position: -616px -219px;
+            }
+        
+            .recycle_bin {
+                height: 32px;
+                width: 30px;
+                background-position: -616px -251px;
+            }
+        
+            .folder{
+                height: 27px;
+                width: 32px;
+                background-position: -616px -283px;
+            }
+        
+            .start_bar .start_button .logo {
+                width: 16px;
+                height: 14px;
+                background-position: -633px -103px;
+            }
+        
+            .application_icons {
+                height: 16px;
+                width: 84px;
+                background-position: -565px -69px;
+            }
+        
+            .start_bar .tray .calendar {
+                height: 16px;
+                width: 16px;
+                background-position: -632px -87px;
+            }
+        
+            .start_menu {
+                height: 383px;
+                width: 168px;
+                background-position: 0px 0px;
+            }
+        
+            .window .top {
+                height: 44px;
+                background-position: -168px 0px;
+            }
+            
+            .description .top {
+                height: 21px;
+                background-position: -168px -134px;
+            }
+            
+            .description .ok_button  {
+                height: 23px;
+                width: 75px;
+                margin-top: 7px;
+                background-position: -231px -158px;
+            }
+            
+            .description .bottom {
+                height: 2px;
+                background-position: -168px -155px;
+            }
+        
+            .window .middle, div.notes, div.attribution, div.tags {
+                background: url('//static.tumblr.com/fpdiq1j/utSm3gwcy/large_middle.png');
+                background-repeat: repeat-y;
+            }
+        
+            .window .bottom {
+                background-position: -168px -46px;
+                height: 22px;
+            } 
+        
+            .icon_label {
+                padding-top: 6px;
+                color: {color:Icon labels};
+                text-align: center;
+            }
+        
+            .icons a {
+                color: {color:Icon labels};
+                text-decoration: none;
+                display: block;
+                margin-bottom: 15px;
+            }
+        
+            .title {
+                display: block;
+                font-size: 1.25em;
+                margin-bottom: 5px;
+            }
+        
+            img.full_image {
+                width: 100%;
+            }
+            
+            .body img, .caption img {
+                max-width: 100%;
+                overflow: hidden;
+            }
+        
+            #desktop, .navigation {
+                margin: 20px auto;
+                z-index: 3;
+                position: relative;
+                {block:IfTwoColumns}
+                    width: 1000px;
+                {/block:IfTwoColumns}
+                {block:IfNotTwoColumns}
+                    width: 480px;
+                {/block:IfNotTwoColumns}
+                left: 10px;
+            }
 
-<hr class="dotted">
+            body.permalink_page #desktop,
+            body.permalink_page .navigation {
+                width: 480px;
+            }
 
-<p class="bio"><br/><b>what’s reality anyway ? </b><br/>if we were to look at what’s it truly means to ask one to be ’ realistic ’ , it might bind us to the nightmares of our pasts - or if you’re optimistic &amp; altruistic - the blesses of the present that speak to forgiveness , granted to your heart posture .
-<br/><br/>
-All in All , let’s show and design a future that fulfills the goodness of our minds, bodies and pure souls .
-<b>live well</b> , and we might just see …
-we’ll all be better in wellness and joy for it .
-<br/><b><i>for who are we not to be?</i></b>
-<br/><br/><br/></p>
+            .window {
+                width: 480px;
+                max-width: 480px;
+                {block:IfTwoColumns}
+                    float: left;
+                    margin: 0 20px 20px 0;
+                {/block:IfTwoColumns}
+                {block:IfNotTwoColumns}
+                    margin: 0 0 30px 0;
+                {/block:IfNotTwoColumns}
+            }
+        
+            .window .top {
+                height: 44px;
+            }
+        
+            .window .top .info {
+                top: 26px;
+                left: 10px;
+                position: relative;
+                width: 300px;
+                z-index: 4;
+                font-size: 11px;
+                line-height: 13px;
+            }
 
-<hr class="dotted">
+            .window > a {
+                color: #000000;
+                text-decoration: none;
+            }
 
-<hr class="dotted">
+            .window .top a:hover {
+                text-decoration: underline;
+            }
+        
+            .window .middle, div.notes, div.attribution, div.tags {
+                background-repeat: repeat-y;
+                padding: 4px 26px 4px 10px;
+            }
+            
+            .middle .caption {
+                margin-top: 5px; /* possibly redundant */
+            }
 
-<p class="bio"><br/><br/><b>MERCI BEACOUPS</b><br/>
-thank you for being you ; each of you ( yall know who yall are !!! ) that helped along us along this journey of showing up as the fullest , truest , and highest version of self .
-<br/><b><br/>thank you family ;</b>
-<b><br/>thank you friends ;</b>
-<b><i><br/>yall show me a truer meaning to unconditional love everyday;</i></b>
-<b><br/>thank U God</b>
-<br/><br/><br/></p>
+            .quote .dash {
+                float: left;
+                padding: 0 4px 0 6px;
+            }
 
-<hr class="dotted">
+            .quote .source {
+                float: left;
+            }
+            
+            .chat .line {
+                margin-bottom: 3px;
+            }
+            
+            .chat .line:last-of-type {
+                margin-bottom: 0;
+            }
+            
+            .photo .wrapper {
+                position: relative;
+                z-index: 0;
+            }
 
-<hr class="dotted">
+            .photo .wrapper .make_lightbox {
+                position: absolute;
+                padding: 6px 8px;
+                bottom: 0;
+                right: 0;
+                background-color: #FFFFFF;
+                font-size: 0.9em;
+                z-index: 1;
+                opacity: 0;
+                -webkit-transition: opacity 0.2s ease-out;
+                -moz-transition: opacity 0.2s ease-out;
+                transition: opacity 0.2s ease-out;
+            }
 
-<p class="bio"><br/><br/><b>TOOLS</b>
-<br/>GRATITUDE COMMUNICATION EMPATHY 
-<br/>PATIENCE PRESENTATION POSITIONING
-<br/>HTML CSS JAVA 
-<br/>JAVASCRIPT  REACT  MIRO
-<br/>FIGMA ADOBE XD BALSAMIQ 
-<br/>ADOBE PHOTOSHOP &amp; SO MUCH MORE
-<br/><br/><br/><b>HOBBIES</b>
-<br/>READIN’ SWIMMIN’ GARDENIN’ 
-<br/>NATUROPATHY POETRY  WRITIN’
-<br/>RESTIN’
-<br/>ENJOYIN’ MUSIC IN EVERY CAPACITY
-<br/></p>
+            .photo .wrapper:hover .make_lightbox {
+                opacity: 0.8;
+                -webkit-transition: opacity 0.2s ease-out;
+                -moz-transition: opacity 0.2s ease-out;
+                transition: opacity 0.2s ease-out;
+            }
 
-<p><br/><br/></p>
+            .make_lightbox:hover {
+                cursor: pointer;
+            }
+            
+            .tagged {
+                font-size: 0.8em;
+                margin-top: 8px;
+                opacity: 0.8;
+            }
+            
+            .window .bottom {
+                height: 22px;
+            }
+            
+            .description {
+                position: fixed;
+                top: 20%;
+                right: 10%;
+                z-index: 4;
+                width: 200px;
+            }
+            
+            .description .middle {
+                background: url('//static.tumblr.com/fpdiq1j/leqm4f39j/description_middle.png') repeat-y;
+                display: block;
+                padding: 5px;
+                max-width: 190px;
+                font-size: 11px;
+            }
 
-<hr class="dotted">
+            ol.notes {
+                padding: 11px 0 0 0;
+                margin: 0;
+                border-top: 1px dashed #cccccc;
+            }
 
-<hr class="dotted">
+            ol.notes li.note {
+                list-style: none;
+                margin-bottom: 3px;
+            }
+            
+            ol.notes li.note img.avatar {
+                vertical-align: middle;
+                margin-right: 5px;
+            }
 
-<hr class="dotted">
+            ol.notes li.note:last-child {
+                margin-bottom: 0;
+            }
 
-<p><br/><br/></p>
+            ol.notes li.note span.action {
+                top: -4px;
+                position: relative;
+            }
 
-<div class="wrapper center">
-  <a href="#http://" class="icon love">
-    <i class="fas fa-heart"></i>
-  </a> 
-  <a href="#http://" class="icon love">
-    <i class="fas fa-heart"></i>
-  </a> 
-  <a href="#http://" class="icon love">
-    <i class="fas fa-heart"></i>
-  </a> 
-  <a href="#http://" class="icon love">
-    <i class="fas fa-heart"></i>
-  </a> 
-  <a href="#http://" class="icon love">
-    <i class="fas fa-heart"></i>
-  </a> 
-</div>
+            .navigation {
+                overflow: hidden;
+                font-weight: bold;
+                clear: both;
+                float: none;
+                margin-bottom: 40px !important;
+            }
+            
+            .navigation .next, .navigation .prev {
+                background-color: #FFFFFF;
+                padding: 6px 8px;
+            }
+            
+            .navigation .next {
+                float: right;
+            }
+        
+        
+            .start_bar {
+                position: fixed;
+                background-color: rgb(192,192,192);
+                bottom: 0;
+                height: 28px;
+                width: 100%;
+                z-index: 4;
+            }
+        
+            .start_menu {
+                position: fixed;
+                z-index: 3;
+                bottom: 28px;
+                display: none;
+            }
+        
+            .start_bar .top_border {
+                border-bottom: 1px solid rgb(255,255,255);
+                border-top: 1px solid rgb(223,223,223);
+            }
+        
+            .start_bar .start_button {
+                float: left;
+                border-top: 2px solid white;
+                border-left: 2px solid white;
+                border-bottom: 2px solid gray;
+                border-right: 2px solid gray;
+                height: 18px;
+                width: 54px;
+                margin-left: 2px;
+                margin-top: 2px;
+            }
+        
+            .sb_click {
+                border-bottom: 2px solid white !important;
+                border-right: 2px solid white !important;
+                border-top: 2px solid gray !important;
+                border-left: 2px solid gray !important;
+            }
+        
+            .start_bar .start_button .text{
+                float: right;
+                display: inline;
+                margin-right: 4px;
+                line-height: 18px;
+                font-weight: bold;
+            }
+        
+            .start_bar .start_button .logo{
+                float: left;
+                margin-top: 2px;
+                margin-left: 2px;
+            }
+        
+            .start_bar .big_seperator {
+                float: left;
+                border-left: 1px solid rgb(128,128,128);
+                border-right: 1px solid rgb(255,255,255);
+                height: 22px;
+                margin-top: 2px;
+                margin-left: 2px;
+            }
+        
+            .start_bar .small_seperator {
+                float: left;
+                border-left: 1px solid rgb(255,255,255);
+                border-top: 1px solid rgb(255,255,255);
+                border-right: 1px solid rgb(128,128,128);
+                border-bottom: 1px solid rgb(128,128,128);
+                background-color: rgb(192,192,192);
+                width: 1px;
+                height: 16px;
+                margin-top: 4px;
+                margin-left: 2px;
+            }
+        
+            .start_bar .application_icons {
+                float: left;
+                margin-top: 5px;
+                margin-left: 7px;
+                margin-right: 7px;
+            }
+        
+            .start_bar .tray {
+                float: right;
+                border-top: 1px solid rgb(128,128,128);
+                border-left: 1px solid rgb(128,128,128);
+                border-bottom: 1px solid rgb(255,255,255);
+                border-right: 1px solid rgb(255,255,255);
+                height: 18px;
+                width: 79px;
+                margin-right: 5px;
+                margin-top: 2px;
+            }
+        
+            .start_bar .tray .time {
+                line-height: 18px;
+                float: right;
+                font-size: 10px;
+                margin-right: 10px;
+            }
+        
+            .start_bar .tray .calendar {
+                float: left;
+                margin-top: 1px;
+                margin-left: 3px;
+            }
+            
+            /* COMMON */
 
-<p><br/><br/></p>
+            body.infinite_scrolling .navigation {
+                display: none;
+            }
+            
+            #infscr-loading {
+                position: absolute;
+                top: -9999em;
+                left: -9999em;
+                width: 0;
+                height: 0;
+                overflow: hidden;
+                clip: 0 0 0 0;
+                visibility: hidden;
+            }
+            
+            .middle img {
+                vertical-align: middle;
+            }
 
-<hr class="dotted">
+            .content p, blockquote, ul, ol {
+                margin: 0 0 0.6em 0;
+            }
+            
+            .bio {
+                text-align: center;
+            }
+            
+            .emphasis {
+                font-size:12px;
+            }
+            
+            {block:IfNotPhotoCaptions}.caption{
+                display:none;
+            }{/block:IfNotPhotoCaptions}
 
-<hr class="dotted">
+            {block:IfNotHomeIcon}.home{
+                display:none;
+            }{/block:IfNotHomeIcon}
 
-<hr class="dotted">
+            /* [ note: hide ask ] 
+            {block:IfNotAskIcon}.ask{
+                display:none;
+            }{/block:IfNotAskIcon}
+            */
 
-<p><br/></p>
+            /* [ note: hide submit ] {block:IfNotSubmitIcon}.submit{
+                display:none;
+            }{/block:IfNotSubmitIcon}
+            */
 
-<p class="bio"><b>partners blessed to work with :</b></p>
+            {block:IfNotPagesIcon}.pages{
+                display:none;
+            }{/block:IfNotPagesIcon}
 
-<div class="wrapper bio">
-   <img src="https://64.media.tumblr.com/962ee754b6f5c76e3aca26d99eb5389c/tumblr_inline_ry0d6cSZua1yq3oax_500.png" width="100%/"/></div>
-
-<p><br/></p>
-
-<hr class="dotted">
-
-<hr class="dotted">
-
-<p><br/></p>
-
-<p class="bio"><b>socials :</b></p>
-
-<div class="wrapper bio">
-  <a href="https://twitter.com/divinenurux" class="icon twitter">
-    <i class="fab fa-twitter"></i>
-  </a>
-  <a href="https://www.instagram.com/divinenurux" class="icon instagram">
-    <i class="fab fa-instagram"></i>
-  </a>
-  <a href="https://www.linkedin.com/in/maryelizabethsadebrown" class="icon linkedin">
-    <i class="fab fa-linkedin-in"></i>
-  </a>
-</div>
-
-<p class="bio"><b>portfolios :</b></p>
-
-<div class="wrapper bio">
-  <a href="https://dribbble.com/divinenurux" class="icon dribbble">
-    <i class="fab fa-dribbble"></i>
-  </a> 
-  <a href="https://www.behance.net/divinenurux" class="icon behance">
-    <i class="fab fa-behance"></i>
-  </a>
-  <a href="https://github.com/marybrown0710" class="icon github">
-    <i class="fab fa-github"></i>
-  </a>
-</div>
-
-<p><br/></p>
-
-<hr class="dotted">
-
-<hr class="dotted">
-
-<p><br/></p>
-
-<p class="bio"><b>released projects : </b></p>
-
-<p class="bio emphasis"><i>what medium do ya fancy?</i>
-<br/><br/></p>
-
-<div class="wrapper bio">
-   <a href="#http://" class="icon amazon">
-    <i class="fab fa-amazon"></i>
-  </a>
-  <a href="https://open.spotify.com/show/0DYzwLuSKxShDx2w9LdLqX" class="icon spotify">
-    <i class="fab fa-spotify"></i>
-  </a>
-  <a href="#http://" class="icon youtube">
-    <i class="fab fa-youtube"></i>
-  </a>
-  <a href="https://soundcloud.com/maryesbrown" class="icon soundcloud">
-    <i class="fab fa-soundcloud"></i>
-  </a>
-</div>
-
-<hr class="dotted">
-
-<hr class="dotted">
-
-<hr class="dotted">
-
-<p><br/></p>
-
-<p class="bio"><b>thank you for your time ✨</b></p>
-
-<p class="bio emphasis"><b><i>much love &amp; peace , divine nuru x . </i></b></p>
-
-<p><br/></p>
-
-<p><img src="https://64.media.tumblr.com/d8d656a06f941e97233789355f3e9435/tumblr_inline_rzqx8qNZf11yq3oax_500.png"/></p>
-
-<p><br/></p>
-
-<hr class="dotted">
-
-<hr class="dotted">
+            /* [ note: hide archive ]
+            {block:IfNotArchiveIcon}.archive{
+                display:none;
+            }{/block:IfNotArchiveIcon}
+            */
+        
+            {CustomCSS}
+        </style>
+        
+        <!-- Font Awesome 5.15.1 CSS -->
+        <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css'>
+        
+        <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+        <script src="//static.tumblr.com/fpdiq1j/Ieqn0wdlb/jquery.imagesloaded.min.js"></script>
+        <script src="//static.tumblr.com/fpdiq1j/GV9n0wdlc/jquery.infinitescroll.min.js"></script>
+        <script src="//static.tumblr.com/fpdiq1j/x8Nn0wiyd/jquery.masonry.min.js"></script>
+        <script src="//static.tumblr.com/fpdiq1j/jpPn0wdlf/jquery.photosetgrid.min.js"></script>
+        <script src="//static.tumblr.com/fpdiq1j/6oKn0wj7b/win98.js"></script>
+  </head>
+  <body>
+    <p><b>M . E . S . DIVINE NURU . BROWN</b>
+    <br/><br/><i>UX/PRODUCT DESIGNER</i>
+    <br/><br/><i>ENGINEER BY TRADE</i>
+    
+    <br/><br/>
+    
+    </p>
+    
+    <hr class="dotted">
+    
+    <hr class="dotted">
+    
+    <p class="bio"><br/><b>what’s reality anyway ? </b><br/>if we were to look at what’s it truly means to ask one to be ’ realistic ’ , it might bind us to the nightmares of our pasts - or if you’re optimistic &amp; altruistic - the blesses of the present that speak to forgiveness , granted to your heart posture .
+    <br/><br/>
+    All in All , let’s show and design a future that fulfills the goodness of our minds, bodies and pure souls .
+    <b>live well</b> , and we might just see …
+    we’ll all be better in wellness and joy for it .
+    <br/><b><i>for who are we not to be?</i></b>
+    <br/><br/><br/></p>
+    
+    <hr class="dotted">
+    
+    <hr class="dotted">
+    
+    <p class="bio"><br/><br/><b>MERCI BEACOUPS</b><br/>
+    thank you for being you ; each of you ( yall know who yall are !!! ) that helped along us along this journey of showing up as the fullest , truest , and highest version of self .
+    <br/><b><br/>thank you family ;</b>
+    <b><br/>thank you friends ;</b>
+    <b><i><br/>yall show me a truer meaning to unconditional love everyday;</i></b>
+    <b><br/>thank U God</b>
+    <br/><br/><br/></p>
+    
+    <hr class="dotted">
+    
+    <hr class="dotted">
+    
+    <p class="bio"><br/><br/><b>TOOLS</b>
+    <br/>GRATITUDE COMMUNICATION EMPATHY 
+    <br/>PATIENCE PRESENTATION POSITIONING
+    <br/>HTML CSS JAVA 
+    <br/>JAVASCRIPT  REACT  MIRO
+    <br/>FIGMA ADOBE XD BALSAMIQ 
+    <br/>ADOBE PHOTOSHOP &amp; SO MUCH MORE
+    <br/><br/><br/><b>HOBBIES</b>
+    <br/>READIN’ SWIMMIN’ GARDENIN’ 
+    <br/>NATUROPATHY POETRY  WRITIN’
+    <br/>RESTIN’
+    <br/>ENJOYIN’ MUSIC IN EVERY CAPACITY
+    <br/></p>
+    
+    <p><br/><br/></p>
+    
+    <hr class="dotted">
+    
+    <hr class="dotted">
+    
+    <hr class="dotted">
+    
+    <p><br/><br/></p>
+    
+    <div class="wrapper center">
+      <a href="#http://" class="icon love">
+        <i class="fas fa-heart"></i>
+      </a> 
+      <a href="#http://" class="icon love">
+        <i class="fas fa-heart"></i>
+      </a> 
+      <a href="#http://" class="icon love">
+        <i class="fas fa-heart"></i>
+      </a> 
+      <a href="#http://" class="icon love">
+        <i class="fas fa-heart"></i>
+      </a> 
+      <a href="#http://" class="icon love">
+        <i class="fas fa-heart"></i>
+      </a> 
+    </div>
+    
+    <p><br/><br/></p>
+    
+    <hr class="dotted">
+    
+    <hr class="dotted">
+    
+    <hr class="dotted">
+    
+    <p><br/></p>
+    
+    <p class="bio"><b>partners blessed to work with :</b></p>
+    
+    <div class="wrapper bio">
+       <img src="https://64.media.tumblr.com/962ee754b6f5c76e3aca26d99eb5389c/tumblr_inline_ry0d6cSZua1yq3oax_500.png" width="100%/"/></div>
+    
+    <p><br/></p>
+    
+    <hr class="dotted">
+    
+    <hr class="dotted">
+    
+    <p><br/></p>
+    
+    <p class="bio"><b>socials :</b></p>
+    
+    <div class="wrapper bio">
+      <a href="https://twitter.com/divinenurux" class="icon twitter">
+        <i class="fab fa-twitter"></i>
+      </a>
+      <a href="https://www.instagram.com/divinenurux" class="icon instagram">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <a href="https://www.linkedin.com/in/maryelizabethsadebrown" class="icon linkedin">
+        <i class="fab fa-linkedin-in"></i>
+      </a>
+    </div>
+    
+    <p class="bio"><b>portfolios :</b></p>
+    
+    <div class="wrapper bio">
+      <a href="https://dribbble.com/divinenurux" class="icon dribbble">
+        <i class="fab fa-dribbble"></i>
+      </a> 
+      <a href="https://www.behance.net/divinenurux" class="icon behance">
+        <i class="fab fa-behance"></i>
+      </a>
+      <a href="https://github.com/marybrown0710" class="icon github">
+        <i class="fab fa-github"></i>
+      </a>
+    </div>
+    
+    <p><br/></p>
+    
+    <hr class="dotted">
+    
+    <hr class="dotted">
+    
+    <p><br/></p>
+    
+    <p class="bio"><b>released projects : </b></p>
+    
+    <p class="bio emphasis"><i>what medium do ya fancy?</i>
+    <br/><br/></p>
+    
+    <div class="wrapper bio">
+       <a href="#http://" class="icon amazon">
+        <i class="fab fa-amazon"></i>
+      </a>
+      <a href="https://open.spotify.com/show/0DYzwLuSKxShDx2w9LdLqX" class="icon spotify">
+        <i class="fab fa-spotify"></i>
+      </a>
+      <a href="#http://" class="icon youtube">
+        <i class="fab fa-youtube"></i>
+      </a>
+      <a href="https://soundcloud.com/maryesbrown" class="icon soundcloud">
+        <i class="fab fa-soundcloud"></i>
+      </a>
+    </div>
+    
+    <hr class="dotted">
+    
+    <hr class="dotted">
+    
+    <hr class="dotted">
+    
+    <p><br/></p>
+    
+    <p class="bio"><b>thank you for your time ✨</b></p>
+    
+    <p class="bio emphasis"><b><i>much love &amp; peace , divine nuru x . </i></b></p>
+    
+    <p><br/></p>
+    
+    <p><img src="https://64.media.tumblr.com/d8d656a06f941e97233789355f3e9435/tumblr_inline_rzqx8qNZf11yq3oax_500.png"/></p>
+    
+    <p><br/></p>
+    
+    <hr class="dotted">
+    
+    <hr class="dotted">
+  </body>
+</html>
