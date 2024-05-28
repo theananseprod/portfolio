@@ -1,4 +1,4 @@
-<html>
+<!DOCTYPE html>
   <head>
         <!-- Win98, from themes.edada.ms -->
         <title>{Title}{block:PostSummary}, {PostSummary}{/block:PostSummary}{block:TagPage}, #{Tag}{/block:TagPage}</title>
